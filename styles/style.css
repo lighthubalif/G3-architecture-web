@@ -10,7 +10,7 @@
 }
 .g3{
     font-weight: bold;
-   font-size: 30px;
+   font-size: 2.8rem;
 }
 .display-flex{
     display: flex;
@@ -18,7 +18,7 @@
 .nav-item{
     list-style: none;
     margin-right: 50px;
-    margin-top: 20px;
+    
 }
 .dark-01{
     color: #131313;
@@ -38,12 +38,98 @@
 }
 .navbar{
     justify-content: space-between;
+    align-items: center;
 }
 .bg-color{
 
     background-color: rgba(255, 144, 14, 0.1);
 }
-.navbar, banner{
+.navbar, .banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+.banner-contain{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.brand{
+   font-size: 4rem;
+   font-weight: bold; 
+}
+.pragraph{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btn-primary{
+    width: 180px;
+    height: 64px;
+    border-radius: 10px;
+    background-color: #FF900E;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    
+    padding: 20px;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main >section{
+    margin-top: 130px;
+}
+.images{
+    width: 100%;
+}
+.teams{
+    display: flex;
+    align-items: center;
+}
+.teams-image{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    margin-right: 70px;
+    width: 100%;
+}
+.feature-title{
+   font-size: 45px;
+   font-weight: 500; 
+}
+.span-title{
+    color: #131313;
+}
+.br-tag{
+    color: #FF900E;
+}
+.feature-pag{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.team-feature{
+    max-width: 530px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quarry */
+@media screen and (max-width:576px) {
+    .navbar, .nav-links, .teams{
+        flex-direction: column;
+    }
+    .teams-image{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
